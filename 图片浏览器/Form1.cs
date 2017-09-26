@@ -26,13 +26,13 @@ namespace 图片浏览器
             {
                 pictureBox1.Width = (int)(pictureBox1.Width * 1.1);//因为Widthh和Height都是int类型，所以要强制转换一下-_-||  
                 pictureBox1.Height = (int)(pictureBox1.Height * 1.1);
-                pictureBox1.Location=new System.Drawing.Point(500, 0);
+                pictureBox1.Location = new Point((1000 - pictureBox1.Width) / 2, (500 - pictureBox1.Height) / 2);
             }
             else
             {
                 pictureBox1.Width = (int)(pictureBox1.Width * 0.9);
                 pictureBox1.Height = (int)(pictureBox1.Height * 0.9);
-                pictureBox1.Location = new Point(300, 0);
+                pictureBox1.Location = new Point((1000 - pictureBox1.Width) / 2, (500 - pictureBox1.Height) / 2);
             }
         }
 
